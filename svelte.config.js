@@ -5,14 +5,22 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: preprocess(),
+	preprocess: [
+		preprocess({
+			postcss: true
+		})
+	],
 	kit: {
 		adapter: adapter({
 			pages: 'build',  // path to public directory
 			assets: 'build',  // path to public directory
 			fallback: null
 		})
-	}
+	},
+	paths: {
+		base: '/',
+		assets: '/'
+	  },
 };
 
 export default config;

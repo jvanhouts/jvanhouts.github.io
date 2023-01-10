@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    md: '768px';
+    lg: '1024px';
+}
+
+@layer base {
+    :root {
+        --color-primary: 248 248 248;
+        
+        --color-secondary: 250 250 250;
+        --color-secondary-light: 229 231 235;
+
+        --color-accent: 105 48 195;
+        --color-accent-light: 124 71 209;    
+
+        --box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 10px;
+        --text-gradient: linear-gradient(45deg, #6930c3, #5390d9);
+    }
+    
+    :root[class="dark"] {
+        --color-primary: 18 18 18;
+
+        --color-secondary: 26 26 26;
+        --color-secondary-light: 46 46 47;
+
+        --color-accent: 105 48 195;
+        --color-accent-light: 124 71 209;
+    
+        --box-shadow: rgba(116, 121, 125, 0.2) 0px 1px 10px;
+        --text-gradient: linear-gradient(45deg, #8451d6, #5390d9);
+    }
+}
+
+.paragraph {
+    @apply leading-relaxed text-lg font-medium tracking-wide text-gray-800 dark:text-gray-300;
+}
+
+.title {
+    @apply text-2xl font-semibold tracking-tight;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: "quicksand";
+    @apply text-black dark:text-white;
+    transition: background .5s;
+}
+
+.tag {
+    @apply bg-secondary-light px-2 py-1.5 rounded-lg text-sm;
+}
+
+.btn {    
+    width: fit-content;
+    transition: background .15s, color .15s;
+    @apply bg-accent text-white py-1 px-4 rounded-full font-semibold text-lg border-none;
+}
+
+.btn-inline {
+    animation: .5s;
+    @apply underline text-xl border-none;
+}
+
+.btn-inline .arrow {
+    transition: .25s;
+}
+.btn:hover {
+    cursor: pointer;
+    @apply bg-accent-light;
+}
+
+.card {
+    cursor: pointer;
+    transition: .25s;
+}
+
+.card:hover {
+    transform: scale(1.025);
+}
+
+.card:hover .arrow {
+    transform: translateX(.25rem);
+}
+
+.quote {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.work-icon {
+    margin-left: -3.25rem;
+    @apply absolute bg-secondary-light p-2.5 rounded-full;
+}
+
+.detail {
+    @apply uppercase tracking-wider text-sm border-l-4 border-accent pl-2 text-black dark:text-white;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .detail {
+        @apply border-l-2 border-accent pl-2;
+    }
+
+    .detail:nth-child(even) {
+        @apply mt-2;
+    }
+}
+
