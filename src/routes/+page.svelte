@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import ThemeToggle from "$lib/ThemeToggle.svelte";
     import { ArrowRight, Globe, ClipboardList } from 'lucide-svelte';
 
-    const redirect = () => window.open('https://github.com/gunwunbun', '_blank');
+    const redirect = (url: string) => window.open(url, '_blank');
 </script>
 
 <div class="w-full py-8 flex items-center justify-center">
@@ -29,17 +29,17 @@
 
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-fit">
-            <div class="bg-accent rounded-xl p-8 mt-8 card flex flex-col justify-between"on:click={ redirect }>
+            <div class="bg-accent rounded-xl p-8 mt-8 card flex flex-col justify-between"on:click={ x => redirect("https://github.com/hollow-em/lizardLauncher") }>
                 <div>
                     <h1 class="title text-white">Lizard Launcher</h1>
-                    <p class="my-6 leading-relaxed text-xl text-white">Cross-platform desktop application used to manage and launch the game Cataclysm: Dark Days Ahead.</p>
+                    <p class="my-6 leading-relaxed text-xl text-white">Cross-platform desktop app built with Rust and SvelteKit. Used to manage and launch the game Cataclysm: Dark Days Ahead.</p>
                 </div>
                 <span class="btn-inline flex items-center text-white" href="https://github.com/gunwunbun">Take me there <ArrowRight class="arrow ml-1" /></span>
             </div>
 
-            <div class="bg-secondary-light rounded-xl p-8 lg:mt-8 card flex flex-col justify-between" on:click={ redirect }>
+            <div class="bg-secondary-light rounded-xl p-8 lg:mt-8 card flex flex-col justify-between" on:click={ x => redirect("https://github.com/gunwunbun") }>
                 <div>
-                    <h1 class="title">Other stuff</h1>
+                    <h1 class="title">Other</h1>
                     <p class="my-6 leading-relaxed text-xl">Check out my GitHub to see all of my work.</p>
                 </div>
                 <span class="btn-inline flex items-center">Take me there <ArrowRight class="arrow ml-1"/></span>
