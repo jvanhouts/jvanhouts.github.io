@@ -31,7 +31,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-fit">
             <div class="bg-accent rounded-xl p-8 mt-8 card flex flex-col justify-between"on:click={ x => redirect("https://github.com/hollow-em/lizardLauncher") }>
                 <div>
-                    <h1 class="title text-white">Lizard Launcher</h1>
+                    <h1 class="title text-white">Lizard Launcher <span class="text-gray-300 text-sm">(Releasing Soon&trade;)</span></h1>
                     <p class="my-6 leading-relaxed text-xl text-white">Cross-platform desktop app built with Rust and SvelteKit. Used to manage and launch the game Cataclysm: Dark Days Ahead.</p>
                 </div>
                 <span class="btn-inline flex items-center text-white" href="https://github.com/gunwunbun">Take me there <ArrowRight class="arrow ml-1" /></span>
