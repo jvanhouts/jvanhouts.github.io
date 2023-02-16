@@ -9,7 +9,7 @@
     <div class="w-11/12 md:w-3/4 2xl:w-1/2 max-w-screen-xl">
         <div class="relative w-full flex justify-end bg-secondary-light dark:bg-secondary py-4 rounded-xl">
             <ThemeToggle />
-            <a class="btn git rounded border mr-8" href="https://github.com/jvanhouts" target="_blank" rel="noreferrer">GitHub<ArrowRight class="ml-2 mb-1 inline" /></a>
+            <a class="btn git rounded border mr-8" href="https://github.com/gunwunbun" target="_blank" rel="noreferrer">GitHub<ArrowRight class="ml-2 mb-1 inline" /></a>
         </div>
         
         <div class="flex flex-col justify-center items-center mt-16">
