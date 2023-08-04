@@ -4,22 +4,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
-		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="./_app/immutable/start-31348172.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index-5949452d.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-0847e1cc.js">
+		
+		<link rel="modulepreload" href="./_app/immutable/entry/start.f2c4da46.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.76d697f2.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.8afba78b.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.caf55fde.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
-		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "./_app/immutable/start-31348172.js";
+			<script>
+				{
+					__sveltekit_xk1zzw = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-			start({
-				assets: "",
-				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-				version: "1676544390092"
-			});
-		</script></div>
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./_app/immutable/entry/start.f2c4da46.js"),
+						import("./_app/immutable/entry/app.caf55fde.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
 	</body>
 </html>
