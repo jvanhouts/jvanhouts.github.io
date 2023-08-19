@@ -11,6 +11,10 @@ module.exports = {
         'secondary': 'rgb(var(--color-secondary) / <alpha-value>)',
         'secondary-light': 'rgb(var(--color-secondary-light) / <alpha-value>)',
       },
+      backgroundImage: {
+        'lizard-launcher': "url('/src/lib/assets/lizard_launcher.png')",
+        'slime-shooter': "url('/src/lib/assets/slime_shooter.png')",
+      }
     },
   },
   plugins: [],

@@ -1,6 +1,8 @@
 <script lang="ts">
     import ThemeToggle from "$lib/ThemeToggle.svelte";
     import { ArrowRight, Globe, ClipboardList } from 'lucide-svelte';
+    import SlimeShooterImage from '$lib/assets/slime_shooter.png';
+    import LizardLauncherImage from '$lib/assets/lizard_launcher.png';
 
     const redirect = (url: string) => window.open(url, '_blank');
 </script>
@@ -24,24 +26,26 @@
 <div class="w-full px-0 pt-0 lg:pb-8 pb-8 flex items-center justify-center">
     <div class="w-11/12 md:w-3/4 2xl:w-1/2 max-w-screen-xl">
         <div class="mt-16">
-            <h2 class="tracking-tight font-semibold text-4xl">Projects</h2>
+            <h2 class="font-semibold text-4xl">Projects</h2>
         </div>
 
         <!-- svelte-ignore a11y-click-events-have-key-events -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-fit">
-            <div class="bg-[#326470] rounded-xl p-8 mt-8 card flex flex-col justify-between"on:click={ x => redirect("https://github.com/hollow-em/lizardLauncher") }>
-                <div>
+            <div class="relative bg-slime-shooter rounded-xl p-8 mt-8 card flex flex-col justify-between"on:click={ x => redirect("https://github.com/hollow-em/lizardLauncher") }>
+                <div class="absolute rounded-xl inset-0 w-full h-full bg-accent bg-opacity-95"></div>
+                <div class="z-10">
                     <h1 class="title text-white">Slime Shooter</h1>
-                    <p class="my-6 leading-relaxed text-xl text-white">Top-Down Shooter game made with Unity, built for WebGL.</p>
+                    <p class="mt-2 mb-4 leading-relaxed text-md text-gray-100 h-16">Top-Down Shooter game made with Unity, built for WebGL.</p>
                 </div>
-                <span class="btn-inline flex items-center text-white" href="https://simmer.io/@gunwunbun/slimeshooter">Take me there <ArrowRight class="arrow ml-1" /></span>
+                <span class="mt-8 btn-inline flex items-center text-white mx-auto z-10" href="https://simmer.io/@gunwunbun/slimeshooter">Take me there <ArrowRight class="arrow ml-1" /></span>
             </div>
-            <div class="bg-accent rounded-xl p-8 lg:mt-8 card flex flex-col justify-between"on:click={ x => redirect("https://github.com/hollow-em/lizardLauncher") }>
-                <div>
-                    <h1 class="title text-white">Lizard Launcher <span class="text-gray-300 text-sm">(Releasing Soon&trade;)</span></h1>
-                    <p class="my-6 leading-relaxed text-xl text-white">Cross-platform desktop app built with Rust and SvelteKit. Used to manage and launch the game Cataclysm: Dark Days Ahead.</p>
+            <div class="relative bg-lizard-launcher bg-cover rounded-xl p-8 lg:mt-8 card flex flex-col justify-between"on:click={ x => redirect("https://github.com/hollow-em/lizardLauncher") }>
+                <div class="absolute rounded-xl inset-0 w-full h-full bg-[#326470] bg-opacity-95"></div>
+                <div class="z-10">
+                    <h1 class="title text-white">Lizard Launcher <span class="text-gray-300 text-sm">(Closed Alpha)</span></h1>
+                    <p class="mt-2 mb-4 leading-relaxed text-md text-gray-100 h-16">Cataclysm: Dark Days Ahead launcher app built with Rust and SvelteKit.</p>
                 </div>
-                <span class="btn-inline flex items-center text-white" href="https://github.com/gunwunbun">Take me there <ArrowRight class="arrow ml-1" /></span>
+                <span class="mt-8 btn-inline flex items-center text-white mx-auto z-10" href="https://github.com/gunwunbun">Take me there <ArrowRight class="arrow ml-1" /></span>
             </div>
             <div class="bg-secondary-light rounded-xl p-8 card flex flex-col justify-between" on:click={ x => redirect("https://github.com/gunwunbun") }>
                 <div>
@@ -53,10 +57,10 @@
         </div>
 
         <div class="mt-16">
-            <h2 class="tracking-tight font-semibold text-4xl">Working experience</h2>
+            <h2 class="font-semibold text-4xl">Working experience</h2>
         </div>
 
-        <div class="mt-12 pl-8 border-l-4 border-secondary-light w-full lg:w-1/2 relative">
+        <div class="mt-12 pl-8 border-l-4 border-secondary-light w-full lg:w-3/4 relative">
             <span class="work-icon">
                 <Globe size="18" />
             </span>
@@ -83,7 +87,7 @@
             </div>
         </div>
 
-        <div class="pt-12 pl-8 border-l-4 border-secondary-light w-full lg:w-1/2 relative">
+        <div class="pt-12 pl-8 border-l-4 border-secondary-light w-full lg:w-3/4 relative">
             <span class="work-icon">
                 <Globe size="18" />
             </span>
