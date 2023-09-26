@@ -26,7 +26,7 @@
 <div class="w-full px-0 pt-0 lg:pb-8 pb-8 flex items-center justify-center">
     <div class="w-11/12 md:w-3/4 2xl:w-1/2 max-w-screen-xl">
         <div class="mt-16">
-            <h2 class="font-semibold text-4xl">Projects</h2>
+            <h2 class="font-semibold text-4xl">Recent Projects</h2>
         </div>
 
         <!-- svelte-ignore a11y-click-events-have-key-events -->
