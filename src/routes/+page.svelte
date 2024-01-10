@@ -19,8 +19,8 @@
 
 <div class="w-full px-0 pt-0 lg:pb-8 pb-8 flex items-center justify-center">
     <div class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl">
-        <div class="mt-16 mb-8 pt-4 border-top-solid flex justify-between">
-            <h2 class="font-semibold text-3xl">Recent Projects</h2>
+        <div class="mt-16 mb-8 pt-4 border-top-solid lg:flex lg:justify-between">
+            <h2 class="font-semibold text-3xl mb-3 lg:mb-0">Recent Projects</h2>
             <a class="btn-border git rounded border" href="https://github.com/gunwunbun" target="_blank" rel="noreferrer">View more on GitHub<ArrowRight class="ml-2 mb-1 inline" /></a>
         </div>
 
@@ -28,14 +28,14 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-fit">
             <div class="card" on:click={ x => redirect("https://simmer.io/@gunwunbun/slimeshooter") }>
                 <img src={SlimeShooterImage} alt="Slime Shooter cover art" class="lg:h-64 2xl:h-72 3xl:h-80">
-                <div class="bg-accent p-8 w-11/12 h-36">
+                <div class="bg-accent p-8 w-full lg:w-11/12 min-h-36 2xl:min-h-44">
                     <h1 class="title text-white">Slime Shooter<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline lucide-icon lucide lucide-arrow-right arrow ml-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></h1>
                     <p class="mt-2 mb-4 leading-relaxed text-lg text-gray-100">Top-Down Shooter game made with Unity, built for WebGL.</p>
                 </div>
             </div>
             <div class="card" on:click={ x => redirect("https://github.com/hollow-em/lizardLauncher") }>
                 <img src={LizardLauncherImage} alt="Lizard Launcher cover art" class="lg:h-64 2xl:h-72 3xl:h-80">
-                <div class="bg-accent p-8 w-11/12 h-36">
+                <div class="bg-accent p-8 w-full lg:w-11/12 min-h-36 2xl:min-h-44">
                     <h1 class="title text-white">Lizard Launcher <span class="text-gray-300 text-sm">(Closed Alpha)</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="inline lucide-icon lucide lucide-arrow-right arrow ml-1"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></h1>
                     <p class="mt-2 mb-4 leading-relaxed text-lg text-gray-100">Cataclysm: Dark Days Ahead launcher app built with Rust and SvelteKit.</p>
                 </div>
