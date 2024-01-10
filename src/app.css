@@ -39,6 +39,10 @@
     @apply leading-relaxed text-lg font-medium tracking-wide text-gray-800 dark:text-gray-300;
 }
 
+.border-top-solid {
+    @apply border-t-2 border-black dark:border-white;
+}
+
 .title {
     @apply text-2xl font-semibold tracking-tight;
 }
@@ -60,7 +64,12 @@ body {
 .btn {    
     width: fit-content;
     transition: background .15s, color .15s;
-    @apply bg-accent text-white py-1 px-4 rounded-full font-semibold text-lg border-none;
+    @apply bg-accent text-white py-1 px-4 rounded-md font-semibold text-lg border-none;
+}
+
+.btn-border {
+    width: fit-content;
+    @apply border border-accent text-gray-800 dark:text-gray-300 py-1 px-4 rounded-xl font-semibold text-lg;
 }
 
 .btn-inline {
@@ -71,6 +80,7 @@ body {
 .btn-inline .arrow {
     transition: .25s;
 }
+
 .btn:hover {
     cursor: pointer;
     @apply bg-accent-light;
@@ -79,6 +89,7 @@ body {
 .card {
     cursor: pointer;
     transition: .25s;
+    @apply flex flex-col;
 }
 
 .card:hover {
@@ -87,6 +98,7 @@ body {
 
 .card:hover .arrow {
     transform: translateX(.25rem);
+    transition: .25s;
 }
 
 .quote {
