@@ -11,7 +11,7 @@
         <div class="flex flex-col justify-center items-center mt-16">
             <div class="flex flex-col justify-center items-center">
                 <img src="https://avatars.githubusercontent.com/u/34831190?v=3" class="w-1/4 lg:w-3/12 rounded-full" alt="Me" />
-                <h4 class="quote mt-4">byte me;</h4>
+                <h4 class="quote mt-4">hi</h4>
             </div>
         </div>
     </div>
@@ -51,7 +51,7 @@
                 <Globe size="18" />
             </span>
             <h1 class="title">Steel Vintage Bikes GmbH</h1>
-            <time class="text-gray-500 text-lg inline-block my-1.5 font-medium">2019 - Current</time>
+            <time class="text-gray-500 text-lg inline-block my-1.5 font-medium">2019 - Jan 2024</time>
             <p class="paragraph">Full-stack web development. Building and maintaining Magento 2 e-commerce store.</p>
 
             <div class="pl-8 mt-8 border-l-4 border-secondary-light">
