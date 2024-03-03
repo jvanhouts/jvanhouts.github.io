@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@fontsource/koulen": "^5.0.18",
 		"@fontsource/quicksand": "^4.5.11",
 		"lucide-svelte": "^0.104.0"
 	}
