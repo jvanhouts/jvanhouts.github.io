@@ -51,7 +51,7 @@
 						class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
 					/>
 					<div
-						class="absolute bottom-0 text-white bg-[#A63838] p-2 w-1/2 text-center font-bold text-3xl uppercase koulen border-2 border-secondary rounded-tr-md"
+						class="absolute bottom-0 text-white bg-[#A63838] tracking-wide p-2 w-1/2 text-center font-bold text-3xl uppercase koulen border-2 border-secondary rounded-tr-md"
 					>
 						Slime Shooter
 					</div>
@@ -76,7 +76,7 @@
 						class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
 					/>
 					<div
-						class="absolute bottom-0 text-white bg-[#6900BB] p-2 w-1/2 text-center font-bold text-3xl uppercase koulen border-2 border-secondary rounded-tr-md"
+						class="absolute bottom-0 text-white bg-accent tracking-wide p-2 w-1/2 text-center font-bold text-3xl uppercase koulen border-2 border-secondary rounded-tr-md"
 					>
 						Lizard Launcher
 					</div>
@@ -88,7 +88,7 @@
 					</p>
 
 					<a
-						class="underline text-[#6900BB] font-bold text-2xl"
+						class="underline text-accent font-bold text-2xl"
 						href="https://github.com/hollow-em/lizardLauncher">Check out the GitHub</a
 					>
 				</div>
@@ -96,7 +96,7 @@
 		</section>
 	</div>
 
-	<div class="w-full flex justify-center items-center bg-white mt-12 py-8">
+	<div class="w-full flex justify-center items-center bg-white mt-16 py-16">
 		<section class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl grid md:grid-cols-2">
 			<img
 				src={EchoDiaryImage}
@@ -106,13 +106,13 @@
 			<div class="flex flex-col justify-start order-1 md:order-2">
 				<div class="flex flex-col mt-24">
 					<span class="koulen uppercase text-[#939393] text-4xl">iOS app</span>
-					<span class="koulen uppercase text-6xl">EchoDiary</span>
-					<p class="text-3xl mt-4">
+					<span class="koulen uppercase text-6xl mt-1">EchoDiary</span>
+					<p class="text-3xl mt-6">
 						An iOS app allowing you to keep a diary based on your favorite songs
 					</p>
 					<a
-						class="btn bg-[#c3b1e1] text-black shadow mt-4 text-2xl"
-						href="https://github.com/gunwunbun"
+						class="btn bg-[#c3b1e1] text-black shadow mt-8 text-2xl"
+						href="https://github.com/school-projects-gwb/EchoDiary/"
 						target="_blank"
 						rel="noreferrer"
 						>Check out the GitHub<ArrowRight class="ml-2 mb-1 inline" />
