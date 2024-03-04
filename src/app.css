@@ -20,19 +20,6 @@
 		--box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 10px;
 		--text-gradient: linear-gradient(45deg, #6930c3, #5390d9);
 	}
-
-	:root[class='dark'] {
-		--color-primary: 18 18 18;
-
-		--color-secondary: 26 26 26;
-		--color-secondary-light: 46 46 47;
-
-		--color-accent: 162 136 166;
-		--color-accent-light: 168 145 172;
-
-		--box-shadow: rgba(116, 121, 125, 0.2) 0px 1px 10px;
-		--text-gradient: linear-gradient(45deg, #8451d6, #5390d9);
-	}
 }
 
 .paragraph {
@@ -72,7 +59,7 @@ body {
 .btn {
 	width: fit-content;
 	transition: background 0.15s, color 0.15s;
-	@apply bg-accent text-white py-1 px-4 rounded-md font-semibold text-lg border-none;
+	@apply rounded-md px-4 py-1.5 font-bold koulen tracking-wide border-2 border-secondary uppercase shadow;
 }
 
 .btn-border {
@@ -91,7 +78,7 @@ body {
 
 .btn:hover {
 	cursor: pointer;
-	@apply bg-accent-light;
+	background: #a286d0;
 }
 
 .card {

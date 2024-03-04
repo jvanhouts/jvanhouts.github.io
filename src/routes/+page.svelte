@@ -2,11 +2,12 @@
 	import { ArrowRight, Globe, ClipboardList } from 'lucide-svelte';
 	import SlimeShooterImage from '$lib/assets/slime_shooter.png';
 	import LizardLauncherImage from '$lib/assets/lizard_launcher.png';
+	import EchoDiaryImage from '$lib/assets/echo_diary.png';
 
 	const redirect = (url: string) => window.open(url, '_blank');
 </script>
 
-<div class="w-full py-8 flex items-center justify-center">
+<section class="w-full py-8 flex items-center justify-center">
 	<div class="w-11/12 md:w-3/4 2xl:w-1/2 max-w-screen-xl">
 		<div class="flex flex-col justify-center items-center mt-16">
 			<div class="flex flex-col justify-center items-center">
@@ -16,28 +17,29 @@
 					alt="Me"
 				/>
 				<h4 class="quote mt-4">hi, I'm Jess</h4>
-				<p class="text-2xl">I love programming and I also really like UI & UX design.</p>
+				<p class="text-2xl">I like programming and design.</p>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
-<div class="w-full px-0 pt-0 lg:pb-8 pb-8 flex items-center justify-center">
+<div class="w-full px-0 pt-0 lg:pb-8 pb-8 flex flex-col items-center justify-center">
 	<div class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl">
 		<div class="mt-16 mb-8 pt-4 border-top-solid border-secondary lg:flex lg:justify-between">
 			<h2 class="text-4xl mb-3 lg:mb-0 uppercase koulen font-bold text-secondary">
 				Recent Projects
 			</h2>
 			<a
-				class="rounded-md px-4 py-1.5 font-bold koulen tracking-wide text-xl border-2 border-secondary uppercase bg-accent text-white shadow"
+				class="btn bg-[#c3b1e1] text-black text-xl"
 				href="https://github.com/gunwunbun"
 				target="_blank"
-				rel="noreferrer">View more on GitHub<ArrowRight class="ml-2 mb-1 inline" /></a
-			>
+				rel="noreferrer"
+				>View more on GitHub<ArrowRight class="ml-2 mb-1 inline" />
+			</a>
 		</div>
 
 		<!-- svelte-ignore a11y-click-events-have-key-events -->
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-fit text-secondary">
+		<section class="grid grid-cols-1 lg:grid-cols-2 gap-12 min-h-fit text-secondary">
 			<div
 				class="card shadow rounded-md"
 				on:click={(x) => redirect('https://simmer.io/@gunwunbun/slimeshooter')}
@@ -55,9 +57,7 @@
 					</div>
 				</div>
 				<div class="bg-white p-8 w-full h-full border-2 border-secondary rounded-b-md">
-					<p class="mt-2 mb-4 leading-relaxed text-lg">
-						Top-Down Shooter game made with Unity, built for WebGL.
-					</p>
+					<p class="mt-2 mb-4 leading-relaxed text-lg">Top-Down Shooter game made with Unity.</p>
 
 					<a
 						class="underline text-[#A63838] font-bold text-2xl"
@@ -83,7 +83,8 @@
 				</div>
 				<div class="bg-white p-8 w-full h-full border-2 border-secondary rounded-b-md">
 					<p class="mt-2 mb-4 leading-relaxed text-lg">
-						[CLOSED ALPHA] Cataclysm: Dark Days Ahead launcher app built with Rust and SvelteKit.
+						[CLOSED ALPHA] Cataclysm: Dark Days Ahead launcher desktop app built with Rust and
+						Svelte.
 					</p>
 
 					<a
@@ -92,19 +93,49 @@
 					>
 				</div>
 			</div>
-		</div>
+		</section>
+	</div>
 
-		<div class="mt-32 mb-8 text-8xl font-bold koulen uppercase text-center text-secondary">
+	<div class="w-full flex justify-center items-center bg-white mt-12 py-8">
+		<section class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl grid md:grid-cols-2">
+			<img
+				src={EchoDiaryImage}
+				alt="EchoDiary cover art"
+				class="w-1/2 md:w-10/12 order-2 md:order-1 mt-8 md:mt-0 m-auto md:m-0"
+			/>
+			<div class="flex flex-col justify-start order-1 md:order-2">
+				<div class="flex flex-col mt-24">
+					<span class="koulen uppercase text-[#939393] text-4xl">iOS app</span>
+					<span class="koulen uppercase text-6xl">EchoDiary</span>
+					<p class="text-3xl mt-4">
+						An iOS app allowing you to keep a diary based on your favorite songs
+					</p>
+					<a
+						class="btn bg-[#c3b1e1] text-black shadow mt-4 text-2xl"
+						href="https://github.com/gunwunbun"
+						target="_blank"
+						rel="noreferrer"
+						>Check out the GitHub<ArrowRight class="ml-2 mb-1 inline" />
+					</a>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<div class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl">
+		<div
+			class="mt-24 mb-8 text-6xl md:text-7xl lg:text-8xl font-bold koulen uppercase text-center text-secondary"
+		>
 			Working experience
 		</div>
 
-		<div
+		<section
 			class="w-11/12 xl:w-full 3xl:w-1/2 max-w-screen-xl bg-white border-4 border-secondary p-8 lg:p-16 m-auto -mt-16 rounded-md shadow text-secondary"
 		>
-			<h1 class="text-5xl uppercase koulen mt-8">Steel Vintage Bikes GmbH</h1>
+			<h1 class="text-4xl md:text-5xl uppercase koulen mt-8">Steel Vintage Bikes GmbH</h1>
 			<div class="lg:ml-4">
 				<p class="text-2xl mt-2">Full-stack web development.</p>
-				<p class="text-2xl">Building and maintaining e-commerce store.</p>
+				<p class="text-2xl mt-2">Built and maintained Magento 2 e-commerce store.</p>
 
 				<div class="uppercase font-bold mt-8 text-xl w-full">
 					<span class="text-accent inline-block w-full xl:w-1/4">Feb 2020 - Jan 2024</span>
@@ -118,12 +149,10 @@
 				</div>
 			</div>
 
-			<h1 class="text-5xl uppercase koulen mt-16 text-shadow">React Online</h1>
+			<h1 class="text-4xl md:text-5xl uppercase koulen mt-16 text-shadow">React Online</h1>
 			<div class="lg:ml-4">
 				<p class="text-2xl mt-2">
-					Built the proof of concept of a digital library based on Drupal, applying Optical
-					Character Recognition (OCR) on old newspapers and documents and exploring the Apache Solr
-					search platform.
+					Built the MVP for a digital library (Drupal) preserving old newspapers and documents
 				</p>
 
 				<div class="uppercase font-bold mt-8 text-xl w-full">
@@ -133,6 +162,6 @@
 					<span>Internship</span>
 				</div>
 			</div>
-		</div>
+		</section>
 	</div>
 </div>
