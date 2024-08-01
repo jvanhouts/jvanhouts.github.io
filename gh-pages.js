@@ -1,13 +1,13 @@
 var ghpages = import('gh-pages');
 
 ghpages.publish(
-  'public', // path to public directory
+  'public',
   {
     branch: 'gh-pages',
-    repo: 'git@github.com:gunwunbun/gunwunbun.github.io.git', // Update to point to your repository
+    repo: 'git@github.com:jvanhouts/jvanhouts.github.io.git',
     user: {
-      name: 'gunwunbun', // update to use your name
-      email: 'jvanhouts@protonmail.com' // Update to use your email
+      name: 'jvanhouts',
+      email: 'jvanhouts@protonmail.com'
     },
     dotfiles: true
   },

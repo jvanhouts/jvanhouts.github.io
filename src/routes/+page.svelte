@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ArrowRight, Globe, ClipboardList } from 'lucide-svelte';
+	import { ArrowRight, Github, Mail } from 'lucide-svelte';
 	import SlimeShooterImage from '$lib/assets/slime_shooter.png';
 	import LizardLauncherImage from '$lib/assets/lizard_launcher.png';
 	import EchoDiaryImage from '$lib/assets/echo_diary.png';
@@ -16,14 +16,24 @@
 					class="w-1/4 lg:w-3/12 rounded-full"
 					alt="Me"
 				/>
-				<h4 class="quote mt-4">hi, I'm Jess</h4>
-				<p class="text-2xl">I like programming and design.</p>
+				<h4 class="quote mt-4">Hi, I'm Jess</h4>
+				<div>
+					<p class="text-2xl">I like programming and design.</p>
+					<div class="mt-4 border-t border-t-accent pt-4 flex justify-between">
+						<a href="https://github.com/jvanhouts" target="_blank" class="inline underline"
+							><Github class="inline mr-1" />jvanhouts</a
+						>
+						<a href="mailto:hi@jvanhouts.com" target="_blank" class="inline underline"
+							><Mail class="inline mr-1" />hi@jvanhouts.com</a
+						>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<div class="w-full px-0 pt-0 lg:pb-8 pb-8 flex flex-col items-center justify-center">
+<div class="w-full px-0 pt-0 flex flex-col items-center justify-center">
 	<div class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl">
 		<div class="mt-16 mb-8 pt-4 border-top-solid border-secondary lg:flex lg:justify-between">
 			<h2 class="text-4xl mb-3 lg:mb-0 uppercase koulen font-bold text-secondary">
@@ -31,7 +41,7 @@
 			</h2>
 			<a
 				class="btn bg-[#c3b1e1] text-black text-xl"
-				href="https://github.com/gunwunbun"
+				href="https://github.com/jvanhouts"
 				target="_blank"
 				rel="noreferrer"
 				>View more on GitHub<ArrowRight class="ml-2 mb-1 inline" />
@@ -122,7 +132,7 @@
 		</section>
 	</div>
 
-	<div class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl">
+	<!-- <div class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl">
 		<div
 			class="mt-24 mb-8 text-6xl md:text-7xl lg:text-8xl font-bold koulen uppercase text-center text-secondary"
 		>
@@ -163,5 +173,5 @@
 				</div>
 			</div>
 		</section>
-	</div>
+	</div> -->
 </div>

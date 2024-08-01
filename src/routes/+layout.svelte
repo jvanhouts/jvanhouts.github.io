@@ -12,6 +12,6 @@
 	<title>Jess van Houts - portfolio</title>
 </head>
 
-<main class="wrapper flex items-center flex-col w-full h-fit min-h-screen pb-20 bg-primary">
+<main class="wrapper flex items-center flex-col w-full h-fit min-h-screen bg-primary">
 	<slot />
 </main>
