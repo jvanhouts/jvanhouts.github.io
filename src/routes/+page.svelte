@@ -13,13 +13,13 @@
 			<div class="flex flex-col justify-center items-center">
 				<img
 					src="https://avatars.githubusercontent.com/u/34831190?v=3"
-					class="w-1/4 lg:w-3/12 rounded-full"
+					class="w-1/4 lg:w-1/12 rounded-full"
 					alt="Me"
 				/>
 				<h4 class="quote mt-4">Hi, I'm Jess</h4>
-				<div>
-					<p class="text-2xl">I like programming and design.</p>
-					<div class="mt-4 border-t border-t-accent pt-4 flex justify-between">
+				<div class="w-full md:w-3/4 lg:w-1/2">
+					<p class="text-2xl text-center">Developer with professional experience in full-stack web development and a love for .NET, c++ and design.</p>
+					<div class="mt-4 border-t border-t-accent pt-4 flex justify-between w-full md:w-3/4 m-auto">
 						<a href="https://github.com/jvanhouts" target="_blank" class="inline underline"
 							><Github class="inline mr-1" />jvanhouts</a
 						>
