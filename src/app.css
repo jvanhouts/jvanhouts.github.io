@@ -39,7 +39,7 @@
 }
 
 body {
-	font-family: 'quicksand';
+	font-family: 'figtree';
 	@apply text-black dark:text-white;
 	transition: background 0.5s;
 }
@@ -59,7 +59,7 @@ body {
 .btn {
 	width: fit-content;
 	transition: background 0.15s, color 0.15s;
-	@apply rounded-md px-4 py-1.5 font-bold koulen tracking-wide border-2 border-secondary uppercase shadow;
+	@apply rounded-md px-4 py-1.5 font-bold border-2 border-secondary shadow;
 }
 
 .btn-border {

@@ -3,7 +3,6 @@
 	import SlimeShooterImage from '$lib/assets/slime_shooter.png';
 	import LizardLauncherImage from '$lib/assets/lizard_launcher.png';
 	import UnotyImage from '$lib/assets/unoty.png';
-	import EchoDiaryImage from '$lib/assets/echo_diary.png';
 
 	const redirect = (url: string) => window.open(url, '_blank');
 </script>
@@ -19,8 +18,13 @@
 				/>
 				<h4 class="quote mt-4">Hi, I'm Jess</h4>
 				<div class="w-full md:w-3/4 lg:w-1/2">
-					<p class="text-2xl text-center mb-8 leading-12 mt-4">Developer with professional experience in full-stack web development and a love for .NET, c++ and design.</p>
-					<div class="mt-4 border-t border-t-accent pt-4 flex justify-between w-full md:w-3/4 m-auto">
+					<p class="text-2xl text-center mb-8 leading-12 mt-4">
+						Developer with professional experience in full-stack web development and a love for
+						.NET, c++ and design.
+					</p>
+					<div
+						class="mt-4 border-t border-t-accent pt-4 flex justify-between w-full md:w-3/4 m-auto"
+					>
 						<a href="https://github.com/jvanhouts" target="_blank" class="inline underline"
 							><Github class="inline mr-1" />jvanhouts</a
 						>
@@ -34,14 +38,12 @@
 	</div>
 </section>
 
-<div class="w-full px-0 pt-0 flex flex-col items-center justify-center">
+<div class="w-full px-0 pt-0 flex flex-col items-center justify-center pb-16">
 	<div class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl">
 		<div class="mt-16 mb-8 pt-4 border-top-solid border-secondary lg:flex lg:justify-between">
-			<h2 class="text-4xl mb-3 lg:mb-0 uppercase koulen font-bold text-secondary">
-				Recent Projects
-			</h2>
+			<h2 class="text-4xl mb-3 lg:mb-0 font-bold text-secondary">Recent Projects</h2>
 			<a
-				class="btn bg-[#c3b1e1] text-black text-xl"
+				class="btn bg-[#c3b1e1] text-black text-xl block mt-4 md:mt-0"
 				href="https://github.com/jvanhouts"
 				target="_blank"
 				rel="noreferrer"
@@ -56,23 +58,26 @@
 				on:click={(x) => redirect('https://simmer.io/@gunwunbun/slimeshooter')}
 			>
 				<div class="relative">
-					<img
-						src={SlimeShooterImage}
-						alt="Slime Shooter cover art"
-						class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
-					/>
+					<div>
+						<img
+							src={SlimeShooterImage}
+							alt="Slime Shooter cover art"
+							class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
+						/>
+						<div
+							class="w-full h-full bg-gray-500 absolute top-0 left-0 opacity-80 hover:opacity-0"
+						/>
+					</div>
 					<div
-						class="absolute bottom-0 text-white bg-[#A63838] tracking-wide p-2 w-1/2 text-center font-bold text-3xl uppercase koulen border-2 border-secondary rounded-tr-md"
+						class="absolute bottom-0 bg-[#c3b1e1] p-2 px-4 text-center font-bold text-3xl border-2 border-secondary rounded-tr-md"
 					>
 						Slime Shooter
 					</div>
 				</div>
 				<div class="bg-white p-8 w-full h-full border-2 border-secondary rounded-b-md">
 					<p class="mt-2 mb-4 leading-relaxed text-lg">Top-Down Shooter game made with Unity.</p>
-
-					<a
-						class="underline text-[#A63838] font-bold text-2xl"
-						href="https://simmer.io/@gunwunbun/slimeshooter">Play the Game</a
+					<a class="underline font-bold text-2xl" href="https://simmer.io/@gunwunbun/slimeshooter"
+						>Play the Game</a
 					>
 				</div>
 			</div>
@@ -81,13 +86,19 @@
 				on:click={(x) => redirect('https://github.com/hollow-em/lizardLauncher')}
 			>
 				<div class="relative">
-					<img
-						src={UnotyImage}
-						alt="Lizard Launcher cover art"
-						class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
-					/>
+					<div>
+						<img
+							src={UnotyImage}
+							alt="Lizard Launcher cover art"
+							class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
+						/>
+						<div
+							class="w-full h-full bg-gray-500 absolute top-0 left-0 opacity-80 hover:opacity-0"
+						/>
+					</div>
+
 					<div
-						class="absolute bottom-0 text-white bg-accent tracking-wide p-2 w-1/2 text-center font-bold text-3xl uppercase koulen border-2 border-secondary rounded-tr-md"
+						class="absolute bottom-0 bg-[#c3b1e1] p-2 w-fit text-center font-bold text-3xl border-2 border-secondary rounded-tr-md px-4"
 					>
 						Unoty
 					</div>
@@ -98,7 +109,7 @@
 					</p>
 
 					<a
-						class="underline text-[#A63838] font-bold text-2xl"
+						class="underline font-bold text-2xl"
 						href="https://github.com/school-projects-gwb/unoty/">Check out the GitHub</a
 					>
 				</div>
@@ -108,13 +119,19 @@
 				on:click={(x) => redirect('https://github.com/hollow-em/lizardLauncher')}
 			>
 				<div class="relative">
-					<img
-						src={LizardLauncherImage}
-						alt="Lizard Launcher cover art"
-						class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
-					/>
+					<div>
+						<img
+							src={LizardLauncherImage}
+							alt="Lizard Launcher cover art"
+							class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
+						/>
+						<div
+							class="w-full h-full bg-gray-500 absolute top-0 left-0 opacity-80 hover:opacity-0"
+						/>
+					</div>
+
 					<div
-						class="absolute bottom-0 text-white bg-accent tracking-wide p-2 w-1/2 text-center font-bold text-3xl uppercase koulen border-2 border-secondary rounded-tr-md"
+						class="absolute bottom-0 bg-[#c3b1e1] p-2 w-fit px-4 text-center font-bold text-3xl border-2 border-secondary rounded-tr-md"
 					>
 						Lizard Launcher
 					</div>
@@ -129,7 +146,7 @@
 		</section>
 	</div>
 
-	<div class="w-full flex justify-center items-center bg-white mt-16 py-16">
+	<!-- <div class="w-full flex justify-center items-center bg-white mt-16 py-16">
 		<section class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl grid md:grid-cols-2">
 			<img
 				src={EchoDiaryImage}
@@ -153,7 +170,7 @@
 				</div>
 			</div>
 		</section>
-	</div>
+	</div> -->
 
 	<!-- <div class="w-11/12 xl:w-3/4 3xl:w-1/2 max-w-screen-xl">
 		<div
