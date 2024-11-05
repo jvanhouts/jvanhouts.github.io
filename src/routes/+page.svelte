@@ -23,12 +23,12 @@
 						.NET, c++ and design.
 					</p>
 					<div
-						class="mt-4 border-t border-t-accent pt-4 flex justify-between w-full md:w-3/4 m-auto"
+						class="mt-4 border-t border-t-accent pt-4 flex justify-between w-full md:w-10/12 m-auto"
 					>
-						<a href="https://github.com/jvanhouts" target="_blank" class="inline underline"
+						<a href="https://github.com/jvanhouts" target="_blank" class="inline underline text-lg"
 							><Github class="inline mr-1" />jvanhouts</a
 						>
-						<a href="mailto:hi@jvanhouts.com" target="_blank" class="inline underline"
+						<a href="mailto:hi@jvanhouts.com" target="_blank" class="inline underline text-lg"
 							><Mail class="inline mr-1" />hi@jvanhouts.com</a
 						>
 					</div>
@@ -64,9 +64,7 @@
 							alt="Slime Shooter cover art"
 							class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
 						/>
-						<div
-							class="w-full h-full bg-gray-500 absolute top-0 left-0 opacity-80 hover:opacity-0"
-						/>
+						<div class="card-image" />
 					</div>
 					<div
 						class="absolute bottom-0 bg-[#c3b1e1] p-2 px-4 text-center font-bold text-3xl border-2 border-secondary rounded-tr-md"
@@ -77,13 +75,13 @@
 				<div class="bg-white p-8 w-full h-full border-2 border-secondary rounded-b-md">
 					<p class="mt-2 mb-4 leading-relaxed text-lg">Top-Down Shooter game made with Unity.</p>
 					<a class="underline font-bold text-2xl" href="https://simmer.io/@gunwunbun/slimeshooter"
-						>Play the Game</a
+						>Play the game <ArrowRight class="ml-2 mb-1 inline" /></a
 					>
 				</div>
 			</div>
 			<div
 				class="card shadow rounded-md"
-				on:click={(x) => redirect('https://github.com/hollow-em/lizardLauncher')}
+				on:click={(x) => redirect('https://github.com/school-projects-gwb/unoty/')}
 			>
 				<div class="relative">
 					<div>
@@ -92,9 +90,7 @@
 							alt="Lizard Launcher cover art"
 							class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
 						/>
-						<div
-							class="w-full h-full bg-gray-500 absolute top-0 left-0 opacity-80 hover:opacity-0"
-						/>
+						<div class="card-image" />
 					</div>
 
 					<div
@@ -110,14 +106,11 @@
 
 					<a
 						class="underline font-bold text-2xl"
-						href="https://github.com/school-projects-gwb/unoty/">Check out the GitHub</a
+						href="https://github.com/school-projects-gwb/unoty/">Check out the GitHub<ArrowRight class="ml-2 mb-1 inline" /></a
 					>
 				</div>
 			</div>
-			<div
-				class="card shadow rounded-md"
-				on:click={(x) => redirect('https://github.com/hollow-em/lizardLauncher')}
-			>
+			<div class="card shadow rounded-md">
 				<div class="relative">
 					<div>
 						<img
@@ -125,9 +118,7 @@
 							alt="Lizard Launcher cover art"
 							class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
 						/>
-						<div
-							class="w-full h-full bg-gray-500 absolute top-0 left-0 opacity-80 hover:opacity-0"
-						/>
+						<div class="card-image" />
 					</div>
 
 					<div

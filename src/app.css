@@ -66,6 +66,14 @@ body {
 	transform: scale(1.025);
 }
 
+.card-image {
+	@apply w-full h-full bg-black absolute top-0 left-0 opacity-50 rounded-t-md;
+}
+
+.card:hover .card-image {
+	@apply opacity-0;
+}
+
 .card:hover .arrow {
 	transform: translateX(0.25rem);
 	transition: 0.25s;
