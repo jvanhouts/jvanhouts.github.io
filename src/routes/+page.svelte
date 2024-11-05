@@ -2,6 +2,7 @@
 	import { ArrowRight, Github, Mail } from 'lucide-svelte';
 	import SlimeShooterImage from '$lib/assets/slime_shooter.png';
 	import LizardLauncherImage from '$lib/assets/lizard_launcher.png';
+	import UnotyImage from '$lib/assets/unoty.png';
 	import EchoDiaryImage from '$lib/assets/echo_diary.png';
 
 	const redirect = (url: string) => window.open(url, '_blank');
@@ -18,7 +19,7 @@
 				/>
 				<h4 class="quote mt-4">Hi, I'm Jess</h4>
 				<div class="w-full md:w-3/4 lg:w-1/2">
-					<p class="text-2xl text-center">Developer with professional experience in full-stack web development and a love for .NET, c++ and design.</p>
+					<p class="text-2xl text-center mb-8 leading-12 mt-4">Developer with professional experience in full-stack web development and a love for .NET, c++ and design.</p>
 					<div class="mt-4 border-t border-t-accent pt-4 flex justify-between w-full md:w-3/4 m-auto">
 						<a href="https://github.com/jvanhouts" target="_blank" class="inline underline"
 							><Github class="inline mr-1" />jvanhouts</a
@@ -81,6 +82,33 @@
 			>
 				<div class="relative">
 					<img
+						src={UnotyImage}
+						alt="Lizard Launcher cover art"
+						class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
+					/>
+					<div
+						class="absolute bottom-0 text-white bg-accent tracking-wide p-2 w-1/2 text-center font-bold text-3xl uppercase koulen border-2 border-secondary rounded-tr-md"
+					>
+						Unoty
+					</div>
+				</div>
+				<div class="bg-white p-8 w-full h-full border-2 border-secondary rounded-b-md">
+					<p class="mt-2 mb-4 leading-relaxed text-lg">
+						C++ game engine and game developed during my systems programming minor.
+					</p>
+
+					<a
+						class="underline text-[#A63838] font-bold text-2xl"
+						href="https://github.com/school-projects-gwb/unoty/">Check out the GitHub</a
+					>
+				</div>
+			</div>
+			<div
+				class="card shadow rounded-md"
+				on:click={(x) => redirect('https://github.com/hollow-em/lizardLauncher')}
+			>
+				<div class="relative">
+					<img
 						src={LizardLauncherImage}
 						alt="Lizard Launcher cover art"
 						class="lg:h-64 2xl:h-72 3xl:h-80 opacity-85 w-full rounded-t-md"
@@ -96,11 +124,6 @@
 						[CLOSED ALPHA] Cataclysm: Dark Days Ahead launcher desktop app built with Rust and
 						Svelte.
 					</p>
-
-					<a
-						class="underline text-accent font-bold text-2xl"
-						href="https://github.com/hollow-em/lizardLauncher">Check out the GitHub</a
-					>
 				</div>
 			</div>
 		</section>
