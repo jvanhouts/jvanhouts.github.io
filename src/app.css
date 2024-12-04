@@ -9,21 +9,13 @@
 
 @layer base {
 	:root {
-		--color-primary: 248 248 248;
-
-		--color-secondary: 30 24 32;
-		--color-secondary-light: 229 231 235;
-
-		--color-accent: 114 71 184;
-		--color-accent-light: 168 145 172;
-
-		--box-shadow: rgba(149, 157, 165, 0.2) 0px 1px 10px;
-		--text-gradient: linear-gradient(45deg, #6930c3, #5390d9);
+		--color-background: 247 255 245;
+		--color-accent: 18 91 0;
 	}
 }
 
-.border-top-solid {
-	@apply border-t-2 border-black dark:border-white;
+h1 {
+	@apply text-3xl font-bold text-[#125B00];
 }
 
 * {
@@ -31,55 +23,44 @@
 }
 
 body {
-	font-family: 'figtree';
-	@apply text-black dark:text-white;
+	font-family: 'Figtree Variable';
+	@apply text-accent bg-background;
 	transition: background 0.5s;
 }
 
-.shadow {
-	box-shadow: 4px 4px 1px 0px rgba(0, 0, 0, 1);
-}
-
-.btn {
-	width: fit-content;
-	transition: background 0.15s, color 0.15s;
-	@apply rounded-md px-4 py-1.5 font-bold border-2 border-secondary shadow;
-}
-
-.btn-border {
-	width: fit-content;
-	@apply border border-accent text-gray-800 dark:text-gray-300 py-1 px-4 rounded-xl font-semibold text-lg;
-}
-
-.btn:hover {
-	cursor: pointer;
-	background: #a286d0;
-}
-
 .card {
-	cursor: pointer;
 	transition: 0.25s;
-	@apply flex flex-col;
+	@apply pl-14 pr-4 py-4 rounded-xl text-lg relative w-full;
+}
+
+.card-shadow {
+	box-shadow: 0px 0px 3px rgba(18, 91, 0, 0.25);
+}
+
+.card .title {
+	@apply font-bold text-xl;
+}
+
+.card .icon {
+	@apply absolute -top-4 -left-4 w-14 h-14 border rounded-xl bg-background flex items-center justify-center;
 }
 
 .card:hover {
 	transform: scale(1.025);
 }
 
-.card-image {
-	@apply w-full h-full bg-black absolute top-0 left-0 opacity-50 rounded-t-md;
+.button {
+	@apply bg-accent text-background px-6 py-1 rounded-full mt-6 inline-block w-fit text-lg duration-100;
 }
 
-.card:hover .card-image {
-	@apply opacity-0;
+.button:hover {
+	@apply bg-accent bg-opacity-75 transition-colors;
+}
+
+.arrow {
+	transition: 0.25s;
 }
 
 .card:hover .arrow {
 	transform: translateX(0.25rem);
-	transition: 0.25s;
-}
-
-.quote {
-	font-weight: bold;
-	font-size: 2rem;
 }

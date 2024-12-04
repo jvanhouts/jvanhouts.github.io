@@ -5,6 +5,8 @@
 	import '@fontsource/koulen';
 	import '@fontsource/koulen/400.css';
 
+	import "@fontsource-variable/figtree";
+
 	import '../app.css';
 </script>
 
@@ -12,6 +14,6 @@
 	<title>Jess van Houts - portfolio</title>
 </head>
 
-<main class="wrapper flex items-center flex-col w-full h-fit min-h-screen bg-primary">
+<main class="wrapper flex items-center flex-col w-full h-fit min-h-screen bg-[#@apply bg-[#F7FFF5]">
 	<slot />
 </main>
