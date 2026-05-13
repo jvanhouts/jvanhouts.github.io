@@ -19,7 +19,7 @@ export function InterestLabel({
 			whileHover={{ y: -1, scale: 1.05 }}
 			transition={{ duration: 0.05, ease: 'easeOut' }}
 			className={cn(
-				'my-1 inline-flex items-center gap-4 rounded-full px-2 py-1.5 font-semibold shadow-sm translate-colors duration-200 hover:cursor-pointer hover:bg-pink-50 hover:text-accent',
+				'my-1 inline-flex items-center gap-4 rounded-full px-2 py-0.5 font-semibold shadow-sm translate-colors duration-200 hover:cursor-pointer hover:bg-pink-50 hover:text-accent',
 				props.className
 			)}
 		>

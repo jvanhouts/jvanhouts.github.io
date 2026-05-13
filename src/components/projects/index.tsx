@@ -3,7 +3,7 @@ import { ListItem } from './list-item';
 export function Projects() {
 	return (
 		<section className="mt-8 max-w-lg w-fit sm:ml-8">
-			<h2 className="font-semibold text-primary/50 text-xl leading-tightest">current projects:</h2>
+			<h2 className="font-semibold text-lg text-accent/70 tracking-tight">current projects:</h2>
 			<ul className="mt-1 list-inside list-disc">
 				<ListItem
 					href="https://github.com/jvanhouts"

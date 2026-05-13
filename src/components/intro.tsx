@@ -17,14 +17,14 @@ export function Intro() {
 					fill="currentColor"
 				/>
 				<div className="flex flex-col gap-4 sm:ml-8 sm:mb-16">
-					<span className="absolute text-sm left-42 top-[9rem] sm:-top-6 bg-rosewater/10 px-2 rounded-full">
+					<span className="absolute text-sm left-42 top-[9rem] sm:top-6 bg-rosewater/10 px-2 rounded-full">
 						hi, im <span className="text-rosewater font-semibold">jess!</span>
 					</span>
-					<h1 className="text-3xl max-w-lg tracking-tight leading-10 mt-4 sm:mt-0">
+					<h1 className="text-3xl max-w-lg tracking-tighter mt-4 sm:mt-0">
 						I build things; software at work, cosplay swords and cinnamon rolls at home.
 					</h1>
-					<p className="text-xl text-accent/80 font-semibold sm:absolute sm:bottom-0 sm:left-8">
-						when not behind my 💻, I keep myself busy with:
+					<p className="text-lg text-accent/70 tracking-tight font-semibold sm:absolute sm:bottom-0 sm:left-8">
+						when not behind my 💻, i keep myself busy with:
 					</p>
 				</div>
 			</div>
