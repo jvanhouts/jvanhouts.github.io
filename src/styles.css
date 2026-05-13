@@ -9,13 +9,15 @@
 
 @layer base {
 	:root {
-		--color-background: 254 254 254;
-		--color-accent: 41 34 37;
+		--color-background: #fefbfd;
+		--color-accent: #6d5b66;
+		--color-primary: #3a122f;
+		--color-primary-foreground: #fdf7fb;
 	}
 }
 
 h1 {
-	@apply text-3xl font-bold text-accent;
+	@apply text-3xl font-bold text-primary;
 }
 
 * {
@@ -24,7 +26,7 @@ h1 {
 
 body {
 	font-family: 'Figtree Variable';
-	@apply bg-background text-accent;
+	@apply bg-background text-primary;
 	transition: background 0.5s;
 }
 

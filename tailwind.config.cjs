@@ -5,8 +5,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				accent: 'rgb(var(--color-accent) / <alpha-value>)',
-				background: 'rgb(var(--color-background) / <alpha-value>)'
+				primary: 'rgb(from var(--color-primary) r g b / <alpha-value>)',
+				'primary-foreground': 'rgb(from var(--color-primary-foreground) r g b / <alpha-value>)',
+				accent: 'rgb(from var(--color-accent) r g b / <alpha-value>)',
+				background: 'rgb(from var(--color-background) r g b / <alpha-value>)'
 			}
 		}
 	},

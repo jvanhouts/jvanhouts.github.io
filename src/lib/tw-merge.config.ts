@@ -3,7 +3,7 @@ import { extendTailwindMerge } from 'tailwind-merge';
 export const twMerge = extendTailwindMerge({
 	extend: {
 		theme: {
-			color: ['accent', 'background']
+			color: ['primary', 'accent', 'background']
 		}
 	}
 });

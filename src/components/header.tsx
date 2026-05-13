@@ -8,18 +8,18 @@ export function Header() {
 			>
 				<a
 					href="/"
-					className="rounded-full bg-accent px-6 py-2 text-background text-opacity-100 shadow-sm transition-colors"
+					className="rounded-full bg-primary px-6 py-2 text-primary-foreground text-opacity-100 shadow-sm transition-colors"
 					aria-current="page"
 				>
 					Website
 				</a>
 				<a
 					href="#"
-					className="relative rounded-full px-6 py-2 text-accent text-opacity-30 transition-colors cursor-default"
+					className="relative rounded-full px-6 py-2 text-primary text-opacity-30 transition-colors cursor-default"
 					aria-disabled="true"
 				>
 					Blog
-					<span className="text-sm text-[#179299]/50 font-bold tracking-tight ml-2 bg-[#179299]/5 rounded-full px-2 py-1 border border-[#179299]/20">Soon™</span>
+					<span className="text-xs text-primary/40 tracking-tight ml-1 bg-primary/5 rounded-full px-1.5 italic">soon</span>
 				</a>
 			</nav>
 		</header>
