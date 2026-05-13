@@ -29,31 +29,31 @@ const interests: Interest[] = [
 		id: 'cosplay',
 		label: 'Cosplay',
 		iconSrc: '/images/icons/cosplay.webp',
-		className: 'bg-[#dc8a78]/5 text-[#dc8a78]'
+		className: 'bg-rosewater/5 text-rosewater'
 	},
 	{
 		id: 'printing',
 		label: '3D printing',
 		iconSrc: '/images/icons/printing.webp',
-		className: 'bg-[#8839ef]/5 text-[#8839ef]'
+		className: 'bg-mauve/5 text-mauve'
 	},
 	{
 		id: 'cooking',
 		label: 'Cooking',
 		iconSrc: '/images/icons/cooking.webp',
-		className: 'bg-[#df8e1d]/5 text-[#df8e1d]'
+		className: 'bg-yellow/5 text-yellow'
 	},
 	{
 		id: 'baking',
 		label: 'Baking',
 		iconSrc: '/images/icons/baking.webp',
-		className: 'bg-[#7287fd]/5 text-[#7287fd]'
+		className: 'bg-lavender/5 text-lavender'
 	},
 	{
 		id: 'airsoft',
 		label: 'Airsoft',
 		iconSrc: '/images/icons/airsoft.webp',
-		className: 'bg-[#179299]/5 text-[#179299]'
+		className: 'bg-teal/5 text-teal'
 	}
 ];
 
@@ -139,7 +139,7 @@ export function Interests() {
 				</Drawer>
 			</div>
 
-			<div className="relative mt-8 mb-8 hidden min-h-44 sm:mb-0 md:block">
+			<div className="relative mt-8 mb-8 hidden sm:mb-0 md:block">
 				<motion.div
 					animate={{
 						filter: desktopInterest ? 'blur(4px)' : 'blur(0px)',

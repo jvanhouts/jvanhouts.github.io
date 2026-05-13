@@ -6,7 +6,7 @@ export function Intro() {
 			<div className="flex sm:flex-row flex-col items sm:items-end justify-start gap-2 relative">
 				<img
 					src="https://github.com/jvanhouts.png"
-					alt="Akiba"
+					alt="Jess"
 					className="h-32 w-32 rounded-full object-cover border-4 border-primary/10"
 				/>
 				<Sparkle className="h-4 w-4 text-[#91edd8] absolute left-32 top-24" fill="currentColor" />
@@ -15,9 +15,9 @@ export function Intro() {
 					fill="currentColor"
 				/>
 				<div className="flex flex-col gap-4 sm:ml-12">
-				<h1 className="text-3xl max-w-lg tracking-tight">I'm a full-stack developer with a passion for building things!!</h1>
-				<p className="text-xl tracking-tight text-accent/80">
-					When not behind my macbook, I'm usually busy with:
+				<h1 className="text-3xl max-w-lg tracking-tight">I build things; software at work, cosplay swords and cinnamon rolls at home.</h1>
+				<p className="text-xl text-accent/80 font-medium">
+					When not behind my 💻, I'm usually busy with:
 				</p>
 				</div>
 			</div>

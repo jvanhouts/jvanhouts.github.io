@@ -1,28 +1,34 @@
+import { cn } from '../lib/cva.config';
+
 const currentItems = [
-	'Building an e-reading app',
-	'Playing around with local LLMs',
-	'Improving this portfolio'
+	{ text: 'building an e-reading app', className: 'bg-[#fdf1f4] sm:-rotate-3 border border-[#F8D7E0]/40', dotColor: 'bg-[#FFB3C1]' },
+	{ text: 'playing around with local LLMs', className: 'bg-[#f6f2fe] sm:-rotate-3 sm:mb-16 border border-[#D7D2FF]/60', dotColor: 'bg-[#B3A7FF]' },
+	{ text: '3d printing a huge cosplay sword', className: 'bg-[#f1f7f7] sm:rotate-3 border border-[#CDECE4]/60', dotColor: 'bg-[#64ceb4]' }
 ];
 
 export function Currently() {
 	return (
 		<section className="mt-8">
-			<h2 className="text-xl font-bold tracking-relaxed text-primary/60">currently</h2>
-			<div className="relative mt-4 min-h-80 overflow-hidden rounded-3xl border border-primary/10 shadow-sm">
-				<img
-					src="/images/akiba.jpeg"
-					alt="Akiba"
-					className="absolute inset-0 h-full w-full object-cover blur-sm"
-				/>
-				<div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/15 to-black/10" />
-				<div className="relative z-10 flex flex-wrap gap-3 p-4 sm:p-6">
+			<div className="flex flex-col rounded-3xl border border-primary/10 shadow-sm pt-4 bg-card-background/30">
+				<h2 className="text-lg font-semibold tracking-wider text-primary/50 ml-6">
+					currently
+				</h2>
+				<div className="inset-0 z-10 flex flex-col sm:flex-row h-full w-full md:w-11/12 items-center justify-center gap-4 md:gap-10 p-4 mx-auto text-primary">
 					{currentItems.map((item) => (
-						<span
-							key={item}
-							className="rounded-full border border-white/40 bg-white/25 px-3.5 py-2 text-sm font-semibold text-white backdrop-blur-md"
+						<div
+							key={item.text}
+							className={cn(
+								'rounded-3xl pl-3 pr-2 py-4 text-lg text-primary backdrop-blur-md flex flex-row items-start w-full sm:w-fit ',
+								item.className
+							)}
 						>
-							{item}
-						</span>
+							<div className="flex flex-row gap-1 mt-2.5 mr-2">
+								<span className={cn("h-1.5 w-1.5 bg-primary rounded-full", item.dotColor)}></span>
+								<span className={cn("h-1.5 w-1.5 bg-primary rounded-full opacity-70", item.dotColor)}></span>
+								<span className={cn("h-1.5 w-1.5 bg-primary rounded-full opacity-50", item.dotColor)}></span>
+							</div>
+							<p className="leading-7">{item.text}</p>
+						</div>
 					))}
 				</div>
 			</div>

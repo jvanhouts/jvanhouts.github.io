@@ -10,9 +10,15 @@
 @layer base {
 	:root {
 		--color-background: #fefbfd;
+		--color-card-background: #fff5f8;
 		--color-accent: #6d5b66;
 		--color-primary: #3a122f;
 		--color-primary-foreground: #fdf7fb;
+		--color-rosewater: #dc8a78;
+		--color-mauve: #8839ef;
+		--color-yellow: #df8e1d;
+		--color-lavender: #7287fd;
+		--color-teal: #179299;
 	}
 }
 
