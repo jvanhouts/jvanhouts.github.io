@@ -3,7 +3,7 @@ import { Sparkle } from 'lucide-react';
 export function Intro() {
 	return (
 		<>
-			<div className="flex sm:flex-row flex-col items-center sm:items-end justify-start gap-2 relative">
+			<div className="flex sm:flex-row flex-col items sm:items-end justify-start gap-2 relative">
 				<img
 					src="https://github.com/jvanhouts.png"
 					alt="Akiba"

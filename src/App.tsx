@@ -7,7 +7,6 @@ import { Header } from './components/header';
 import { Intro } from './components/intro';
 import { Contact } from './components/contact';
 import { Interests } from './components/interests/interests';
-import { Currently } from './components/currently';
 
 export default function App() {
 	return (

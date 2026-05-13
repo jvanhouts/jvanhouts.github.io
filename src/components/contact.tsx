@@ -5,7 +5,7 @@ export function Contact() {
 		<a href="https://github.com/jvanhouts" target="_blank" rel="noopener noreferrer" className="flex justify-between items-center gap-2 w-full border border-primary/10 shadow-sm bg-[#f9f2f4] hover:bg-primary/10 transition-all duration-200 py-2 px-4 md:py-4 mt-16 rounded-3xl group hover:cursor-pointer">
 			<div className="flex items-center gap-2">
 				<div className="p-2">
-					<img src="/images/icons/github.png" alt="GitHub" className="h-14" />
+					<img src="/images/icons/github.png" alt="GitHub" className="h-10 sm:h-14" />
 				</div>
 
 				<h2 className="sm:text-lg font-bold ml-2 sm:ml-4 text-primary">Check out my GitHub!</h2>
