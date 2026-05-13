@@ -24,7 +24,7 @@ h1 {
 
 body {
 	font-family: 'Figtree Variable';
-	@apply text-accent bg-background;
+	@apply bg-background text-accent;
 	transition: background 0.5s;
 }
 
@@ -51,7 +51,7 @@ body {
 
 .card {
 	transition: 0.25s;
-	@apply pl-14 pr-4 py-4 rounded-xl text-lg relative w-full;
+	@apply relative w-full rounded-xl py-4 pl-14 pr-4 text-lg;
 }
 
 .card-shadow {
@@ -59,11 +59,11 @@ body {
 }
 
 .card .title {
-	@apply font-bold text-xl;
+	@apply text-xl font-bold;
 }
 
 .card .icon {
-	@apply absolute -top-4 -left-4 w-14 h-14 border rounded-xl bg-background flex items-center justify-center;
+	@apply absolute -left-4 -top-4 flex h-14 w-14 items-center justify-center rounded-xl border bg-background;
 }
 
 .card:hover {
@@ -71,7 +71,7 @@ body {
 }
 
 .button {
-	@apply bg-accent text-background px-6 py-1 rounded-full mt-6 inline-block w-fit text-lg duration-100;
+	@apply mt-6 inline-block w-fit rounded-full bg-accent px-6 py-1 text-lg text-background duration-100;
 }
 
 .button:hover {

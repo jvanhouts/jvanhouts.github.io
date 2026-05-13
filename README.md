@@ -1,6 +1,6 @@
 ## Portfolio website
 
-Built with SvelteKit and TailwindCSS.
+Built with React, Vite, and Tailwind CSS.
 
 ## Deploying
 
