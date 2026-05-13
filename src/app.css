@@ -9,13 +9,13 @@
 
 @layer base {
 	:root {
-		--color-background: 247 255 245;
-		--color-accent: 18 91 0;
+		--color-background: 254 254 254;
+		--color-accent: 41 34 37;
 	}
 }
 
 h1 {
-	@apply text-3xl font-bold text-[#125B00];
+	@apply text-3xl font-bold text-accent;
 }
 
 * {
@@ -26,6 +26,27 @@ body {
 	font-family: 'Figtree Variable';
 	@apply text-accent bg-background;
 	transition: background 0.5s;
+}
+
+.site-header {
+	@apply w-full max-w-5xl px-8 pt-6 lg:px-0;
+}
+
+.site-toggle {
+	@apply flex w-fit items-center gap-1 rounded-full border border-accent border-opacity-10 bg-background p-1 text-lg font-semibold shadow-sm;
+	box-shadow: 0px 0px 3px rgba(18, 91, 0, 0.2);
+}
+
+.site-toggle__item {
+	@apply rounded-full px-6 py-2 text-accent text-opacity-70 transition-colors;
+}
+
+.site-toggle__item:hover {
+	@apply bg-accent bg-opacity-5 text-opacity-100;
+}
+
+.site-toggle__item--active {
+	@apply bg-accent text-background text-opacity-100 shadow-sm;
 }
 
 .card {

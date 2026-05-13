@@ -4,40 +4,22 @@
 </script>
 
 <div
-	class="h-screen w-full max-w-5xl px-8 lg:px-0 bg-[#F7FFF5] flex flex-col lg:flex-row pt-16 gap-20"
+	class="h-screen w-full max-w-5xl px-8 lg:px-0 bg-white flex flex-col lg:flex-row pt-10 gap-20"
 >
 	<section class="w-full lg:w-5/12">
-		<h1>Over mij</h1>
+	<img src="https://github.com/jvanhouts.png" alt="Akiba" class="w-32 h-32 rounded-full object-cover" />
 		<p class="text-xl mt-8">
-			Ik ben een full-stack softwareontwikkelaar en houd van technisch complexe projecten. Ik wil de
-			best mogelijke software bouwen en ik ben ontzettend gemotiveerd en leergierig.
+			I'm a full-stack developer with a passion for building things!!
 		</p>
-		<a href="mailto:hi@jvanhouts.com" target="_blank" class="inline-block underline text-lg mt-4"
-			><Mail class="inline mr-1" />hi@jvanhouts.com</a
-		>
 	</section>
 	<section class="w-full lg:w-7/12 pb-8 lg:pb-0">
-		<h1>Recente projecten</h1>
-		<div class="flex mt-12 ml-3">
-			<div class=" card card-shadow">
-				<div class="card-shadow icon">
-					<Github size={40} />
-				</div>
-				<div>
-					<h2 class="title">GitHub</h2>
-					<p>Al mijn publiekelijk beschikbare code & projecten</p>
-					<a href="https://github.com/jvanhouts" target="_blank" class="button"
-						>Bekijken <ArrowRight class="ml-2 inline arrow mb-0.5" />
-					</a>
-				</div>
-			</div>
-		</div>
+		<h1>Some stuff I made</h1>
 		<div class="flex mt-12 ml-3">
 			<div class=" card card-shadow">
 				<div class="card-shadow icon font-semibold text-4xl">U</div>
 				<div>
 					<h2 class="title">Unoty</h2>
-					<p>Een c++ game engine gebouwd in c++ met gebruik van SDL en Box2D.</p>
+					<p>A game engine built with c++ (SDL, Box2D), with an API familiar to Unity developers!</p>
 					<a href="https://github.com/school-projects-gwb/unoty/" target="_blank" class="button"
 						>Bekijken <ArrowRight class="ml-2 inline arrow mb-0.5" />
 					</a>
@@ -54,8 +36,22 @@
 				</div>
 				<div>
 					<h2 class="title">Slime Shooter</h2>
-					<p>Een game gemaakt in Unity.</p>
+					<p>A top-down shooter game built with Unity. Assets are all hand-made!</p>
 					<a href="https://simmer.io/@gunwunbun/slimeshooter" target="_blank" class="button"
+						>Bekijken <ArrowRight class="ml-2 inline arrow mb-0.5" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="flex mt-12 ml-3">
+			<div class=" card card-shadow">
+				<div class="card-shadow icon">
+					<Github size={40} />
+				</div>
+				<div>
+					<h2 class="title">GitHub</h2>
+					<p>Al mijn publiekelijk beschikbare code & projecten</p>
+					<a href="https://github.com/jvanhouts" target="_blank" class="button"
 						>Bekijken <ArrowRight class="ml-2 inline arrow mb-0.5" />
 					</a>
 				</div>

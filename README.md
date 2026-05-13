@@ -6,7 +6,7 @@ Built with SvelteKit and TailwindCSS.
 
 ```bash
 # Deploy using gh-pages
-npm run deploy
+bun run deploy
 ```
 
 ## Development
@@ -15,10 +15,10 @@ Clone repo, install dependencies and run development server.
 
 ```bash
 # Install dependencies
-npm install dev
+bun install
 
 # Run development server
-npm run dev
+bun run dev
 ```
 
 ## Building
@@ -27,9 +27,9 @@ Building production-ready app (optionally) previewing it
 
 ```bash
 # Building
-npm run build
+bun run build
 
 # Preview production build
-npm run preview
+bun run preview
 
 ```
