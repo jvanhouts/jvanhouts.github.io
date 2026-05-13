@@ -7,7 +7,7 @@ export function PrintingInterestContent() {
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
 			elementum tristique.
 		</p>
-		<InterestContentGallery imageFileNames={['knife.png', 'sword.jpeg']} />
+		<InterestContentGallery imageFileNames={['knife.webp', 'sword.webp']} />
 		</div>
 	);
 }

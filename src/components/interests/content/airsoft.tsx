@@ -7,7 +7,7 @@ export function AirsoftInterestContent() {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
 				elementum tristique.
 			</p>
-			<InterestContentGallery imageFileNames={['glock.jpeg', 'scorpion.jpeg']} />
+			<InterestContentGallery imageFileNames={['glock.webp', 'scorpion.webp']} />
 		</div>
 	);
 }

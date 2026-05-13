@@ -7,7 +7,7 @@ export function BakingInterestContent() {
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
 				elementum tristique.
 			</p>
-			<InterestContentGallery imageFileNames={['baking1.png', 'baking2.png']} />
+			<InterestContentGallery imageFileNames={['baking1.webp', 'baking2.webp']} />
 		</div>
 	);
 }

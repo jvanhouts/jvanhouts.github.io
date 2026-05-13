@@ -7,7 +7,7 @@ export function CosplayInterestContent() {
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
 			elementum tristique.
 		</p>
-		<InterestContentGallery imageFileNames={['enderman.png', 'enderman2.png']} />
+		<InterestContentGallery imageFileNames={['enderman.webp', 'enderman2.webp']} />
 		</div>
 	);
 }

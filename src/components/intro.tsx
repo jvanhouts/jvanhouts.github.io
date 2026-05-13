@@ -14,7 +14,7 @@ export function Intro() {
 					className="h-4 w-4 text-[#fcb6c7] absolute left-[8.75rem] top-[4.5rem]"
 					fill="currentColor"
 				/>
-				<div className="flex flex-col gap-4 sm:ml-8">
+				<div className="flex flex-col gap-4 sm:ml-12">
 				<h1 className="text-3xl max-w-lg tracking-tight">I'm a full-stack developer with a passion for building things!!</h1>
 				<p className="text-xl tracking-tight text-accent/80">
 					When not behind my macbook, I'm usually busy with:
