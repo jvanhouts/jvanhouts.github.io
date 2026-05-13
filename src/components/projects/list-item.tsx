@@ -22,14 +22,14 @@ export function ListItem({
 				target="_blank"
 				rel="noopener noreferrer"
 				className={cn(
-					'inline-flex flex-1 items-center gap-2 border-l-2 pl-2 underline',
+					'inline-flex flex-1 items-center gap-2 border-l-2 pl-2 font-medium text-primary/80',
 					`border-${accentColor}`
 				)}
 			>
 				{label}
 				<ChevronRight
 					className={cn(
-						'ml-2 h-4 w-4 transition-all duration-200 group-hover:translate-x-2',
+						'ml-4 h-4 w-4 transition-all duration-200 group-hover:translate-x-2',
 						`text-${accentColor}`
 					)}
 				/>
