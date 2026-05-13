@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { LucideChevronLeft } from 'lucide-react';
+import { LucideX } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { HobbyLabel } from './hobby-link';
 import { cn } from '../lib/cva.config';
@@ -17,69 +17,80 @@ export function Hobby() {
 	const selectedHobbyData = hobbies.find((hobby) => hobby.hobby === selectedHobby);
 
 	return (
-		<>
-			<AnimatePresence mode="wait" initial={false}>
-				{!selectedHobby ? (
+		<div className="relative mt-8 min-h-44">
+			<motion.div
+				className="flex flex-wrap gap-2 max-w-2xl"
+				animate={{
+					filter: selectedHobby ? 'blur(4px)' : 'blur(0px)',
+					opacity: selectedHobby ? 0.45 : 1,
+					y: selectedHobby ? -6 : 0
+				}}
+				transition={{ duration: 0.22 }}
+			>
+				{hobbies.map((hobby) => (
 					<motion.div
-						key="hobby-overview"
-						className="mt-4 flex flex-wrap gap-2"
-						initial={{ opacity: 0, y: 8 }}
+						key={hobby.hobby}
+						initial={{ opacity: 0, y: 6 }}
 						animate={{ opacity: 1, y: 0 }}
-						exit={{ opacity: 0, y: -8 }}
 						transition={{ duration: 0.2 }}
 					>
-						{hobbies.map((hobby) => (
-							<motion.div
-								key={hobby.hobby}
-								initial={{ opacity: 0, y: 6 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.2 }}
-							>
-								<HobbyLabel
-									hobby={hobby.hobby}
-									emoji={hobby.emoji}
-									className={hobby.className}
-									onClick={() => setSelectedHobby(hobby.hobby)}
-								/>
-							</motion.div>
-						))}
+						<HobbyLabel
+							hobby={hobby.hobby}
+							emoji={hobby.emoji}
+							className={hobby.className}
+							onClick={() => setSelectedHobby(hobby.hobby)}
+						/>
 					</motion.div>
-				) : null}
-			</AnimatePresence>
+				))}
+			</motion.div>
 
 			<AnimatePresence>
 				{selectedHobbyData ? (
-					<motion.div
-						key="hobby-detail"
-						className="relative mt-8 rounded-2xl border border-accent/10 bg-background p-4 pt-8 shadow-sm"
-						initial={{ opacity: 0, y: 10, scale: 0.98 }}
-						animate={{ opacity: 1, y: 0, scale: 1 }}
-						exit={{ opacity: 0, y: 8, scale: 0.98 }}
-						transition={{ duration: 0.22 }}
-					>
-						<button
+					<>
+						<motion.button
 							type="button"
-							className="flex items-center gap-1 text-sm font-semibold text-accent/70 hover:text-accent"
+							aria-label="Close hobby detail"
+							className="absolute inset-x-0 top-0 z-10 h-full cursor-default"
 							onClick={() => setSelectedHobby(null)}
+							initial={{ opacity: 0 }}
+							animate={{ opacity: 1 }}
+							exit={{ opacity: 0 }}
+							transition={{ duration: 0.18 }}
+						/>
+						<motion.div
+							key="hobby-detail"
+							className="absolute left-0 right-0 top-7 z-20 rounded-2xl border border-accent/10 bg-background/95 p-4 pt-6 shadow-xl backdrop-blur"
+							initial={{ opacity: 0, y: 18, scale: 0.96 }}
+							animate={{ opacity: 1, y: 0, scale: 1 }}
+							exit={{ opacity: 0, y: 10, scale: 0.97 }}
+							transition={{ duration: 0.24, ease: 'easeOut' }}
+							onClick={(event) => event.stopPropagation()}
 						>
-							<LucideChevronLeft className="h-4 w-4" aria-hidden="true" />
-							Back to hobbies
-						</button>
-						<h2
-							className={cn(
-								'mt-4 inline-block rounded-lg p-1 text-xl font-bold',
-								selectedHobbyData.className
-							)}
-						>
-							{selectedHobbyData.emoji} {selectedHobbyData.hobby}
-						</h2>
-						<p className="text-sm leading-6 text-accent/80">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
-							in eros elementum tristique.
-						</p>
-					</motion.div>
+							<div className="flex justify-between items-center">
+								<h2
+									className={cn(
+										'inline-block rounded-lg p-1 text-xl font-bold',
+										selectedHobbyData.className
+									)}
+								>
+									{selectedHobbyData.emoji} {selectedHobbyData.hobby}
+								</h2>
+								<button
+									type="button"
+									className="flex items-center text-sm font-semibold text-accent/70 hover:text-accent"
+									onClick={() => setSelectedHobby(null)}
+								>
+									<LucideX className="h-6 w-6" aria-hidden="true" />
+								</button>
+							</div>
+							<p className="text-sm leading-6 text-accent/80 mt-4">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+								eros elementum tristique.
+							</p>
+						</motion.div>
+					</>
 				) : null}
 			</AnimatePresence>
-		</>
+		</div>
 	);
 }

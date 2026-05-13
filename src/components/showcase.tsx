@@ -30,7 +30,7 @@ const projects = [
 
 export function Showcase() {
 	return (
-		<section className="w-full pb-8 lg:w-7/12 lg:pb-0">
+		<>
 			<h1>Some stuff I made</h1>
 			{projects.map((project) => (
 				<div className="ml-3 mt-12 flex" key={project.title}>
@@ -47,6 +47,6 @@ export function Showcase() {
 					</div>
 				</div>
 			))}
-		</section>
+		</>
 	);
 }
