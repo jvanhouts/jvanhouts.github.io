@@ -4,7 +4,7 @@ import { interests, type Interest } from './interest-data';
 
 export function InterestPills({ onSelect }: { onSelect: (interest: Interest['id']) => void }) {
 	return (
-		<motion.div className="max-w-2xl flex flex-wrap gap-2 sm:ml-8">
+		<motion.div className="max-w-2xl flex flex-wrap gap-2 sm:ml-12">
 			{interests.map((interest) => (
 				<motion.div
 					key={interest.id}

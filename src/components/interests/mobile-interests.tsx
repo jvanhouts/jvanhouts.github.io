@@ -17,7 +17,7 @@ export function MobileInterests() {
 	const selectedInterestData = interests.find((interest) => interest.id === selectedInterest);
 
 	return (
-		<div className="mt-8 mb-8 sm:mb-0 md:hidden">
+		<div className="mt-4 mb-8 sm:mb-0 md:hidden">
 			<InterestPills onSelect={setSelectedInterest} />
 			<Drawer
 				open={Boolean(selectedInterestData)}

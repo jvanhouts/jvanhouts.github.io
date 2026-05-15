@@ -10,10 +10,10 @@ export function DesktopInterests() {
 	const selectedInterestData = interests.find((interest) => interest.id === selectedInterest);
 
 	return (
-		<div className="relative mt-8 mb-8 hidden sm:block">
-			<div className="absolute w-4 h-[30rem] rounded-tl-3xl -top-[2.9rem] flex items-end justify-end border-t-[0.2rem] border-l-[0.2rem] border-dashed border-rosewater/20">
+		<div className="relative mb-8 hidden sm:block">
+			<div className="absolute w-4 h-[30rem] rounded-tl-3xl -top-[1.8rem] flex items-end justify-end border-t-[0.2rem] border-l-[0.2rem] border-dashed border-rosewater/20">
 				<span className="block absolute -right-3 -top-[0.50rem] w-3 h-3 bg-rosewater rounded-full"></span>
-				<span className="block absolute -left-2 top-[11.35rem] w-3 h-3 bg-teal rounded-full"></span>
+				<span className="block absolute -left-2 top-[10.35rem] w-3 h-3 bg-teal rounded-full"></span>
 			</div>
 			<motion.div
 				animate={{

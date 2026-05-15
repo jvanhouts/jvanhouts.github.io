@@ -14,33 +14,33 @@ export type Interest = {
 export const interests: Interest[] = [
 	{
 		id: 'cosplay',
-		label: 'Cosplay',
+		label: 'cosplay',
 		iconSrc: '/images/icons/cosplay.webp',
-		className: 'bg-rosewater/5 text-rosewater'
+		className: 'bg-rosewater/5 text-rosewater border border-rosewater/5'
 	},
 	{
 		id: 'printing',
-		label: '3D printing',
+		label: '3d printing',
 		iconSrc: '/images/icons/printing.webp',
-		className: 'bg-mauve/5 text-mauve'
+		className: 'bg-mauve/5 text-mauve border border-mauve/5'
 	},
 	{
 		id: 'cooking',
-		label: 'Cooking',
+		label: 'cooking',
 		iconSrc: '/images/icons/cooking.webp',
-		className: 'bg-yellow/5 text-yellow'
+		className: 'bg-yellow/5 text-yellow border border-yellow/5'
 	},
 	{
 		id: 'baking',
-		label: 'Baking',
+		label: 'baking',
 		iconSrc: '/images/icons/baking.webp',
-		className: 'bg-lavender/5 text-lavender'
+		className: 'bg-lavender/5 text-lavender border border-lavender/5'
 	},
 	{
 		id: 'airsoft',
-		label: 'Airsoft',
+		label: 'airsoft',
 		iconSrc: '/images/icons/airsoft.webp',
-		className: 'bg-teal/5 text-teal'
+		className: 'bg-teal/5 text-teal border border-teal/5'
 	}
 ];
 
