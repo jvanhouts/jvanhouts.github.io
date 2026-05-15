@@ -7,7 +7,7 @@ export function Projects() {
 			<ul className="mt-2 list-inside list-disc">
 				<ListItem
 					href="https://github.com/jvanhouts"
-					label="using local LLMs"
+					label="applying local LLMs in my development workflow"
 					hoverBackgroundColor="hover:bg-rosewater/10"
 					labelChevronColor="text-rosewater"
 					labelBorderColor="bg-rosewater"
@@ -28,7 +28,7 @@ export function Projects() {
 				/>
 				<ListItem
 					href="https://github.com/jvanhouts"
-					label="3d-printed cosplay sword"
+					label="a huge 3d-printed cosplay sword"
 					hoverBackgroundColor="hover:bg-lavender/10"
 					labelChevronColor="text-lavender"
 					labelBorderColor="bg-lavender"

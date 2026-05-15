@@ -2,7 +2,7 @@ import { cn } from '../lib/cva.config';
 
 const currentItems = [
 	{ text: 'building an e-reading app', className: 'bg-[#fdf1f4] sm:-rotate-3 border border-[#F8D7E0]/40', dotColor: 'bg-[#FFB3C1]' },
-	{ text: 'playing around with local LLMs', className: 'bg-[#f6f2fe] sm:-rotate-3 sm:mb-16 border border-[#D7D2FF]/60', dotColor: 'bg-[#B3A7FF]' },
+	{ text: 'applying local LLMs in my development workflow', className: 'bg-[#f6f2fe] sm:-rotate-3 sm:mb-16 border border-[#D7D2FF]/60', dotColor: 'bg-[#B3A7FF]' },
 	{ text: '3d printing a huge cosplay sword', className: 'bg-[#f1f7f7] sm:rotate-3 border border-[#CDECE4]/60', dotColor: 'bg-[#64ceb4]' }
 ];
 
