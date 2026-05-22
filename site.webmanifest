@@ -1,0 +1,20 @@
+{
+	"name": "🐱 Jess",
+	"short_name": "🐱 Jess",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#eff1f5",
+	"theme_color": "#fcb6c7",
+	"icons": [
+		{
+			"src": "/favicon-paw.svg",
+			"sizes": "any",
+			"type": "image/svg+xml"
+		},
+		{
+			"src": "/favicon.png",
+			"sizes": "any",
+			"type": "image/png"
+		}
+	]
+}
